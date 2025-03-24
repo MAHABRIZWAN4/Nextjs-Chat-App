@@ -10,8 +10,7 @@ const UserButton = dynamic(
   { ssr: false }
 );
 
-import { useUser } from "@clerk/nextjs";
-
+// import { useUser } from "@clerk/nextjs";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,8 +22,8 @@ const Navbar = () => {
   ];
 
 
-  const user = useUser()
-  console.log(user.user?.id);
+  // const user = useUser()
+  // console.log(user.user);
   
 
 

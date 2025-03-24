@@ -11,46 +11,46 @@ const topics = [
     img: "/python.jpeg",
     desription:
       "Let's discuss everything related to Python programming language.",
-    slug: "python-",
+    slug: "python-chat",
   },
   {
     text: "JavaScript",
     img: "/image.png",
     desription:
       "Explore the world of JavaScript, from basics to advanced concepts.",
-    slug: "javascript-",
+    slug: "javascript-chat",
   },
   {
     text: "React",
     img: "/react.png",
     desription:
       "A place to discuss React, components, hooks, and state management.",
-    slug: "react-",
+    slug: "react-chat",
   },
   {
     text: "Next.js",
     img: "/next-js.jpeg",
     desription:
       "All about Next.js, server-side rendering, and static site generation.",
-    slug: "nextjs-",
+    slug: "nextjs-chat",
   },
   {
     text: "Tailwind CSS",
     img: "/tailwindcss.png",
     desription: "Discuss utility-first CSS framework for modern web designs.",
-    slug: "tailwindcss-",
+    slug: "tailwindcss-chat",
   },
   {
     text: "Node.js",
     img: "/node-js.png",
     desription: "Server-side JavaScript with Node.js and backend development.",
-    slug: "nodejs-",
+    slug: "nodejs-chat",
   },
   {
     text: "Sanity CMS",
     img: "/sanity.png",
     desription: "Learn and share knowledge about Sanity, a headless CMS.",
-    slug: "sanity-",
+    slug: "sanity-chat",
   },
 ];
 
