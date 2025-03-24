@@ -2,15 +2,12 @@
 
 import { useState } from "react";
 import Link from "next/link";
-
 import dynamic from "next/dynamic";
 
 const UserButton = dynamic(
   () => import("@clerk/nextjs").then((mod) => mod.UserButton),
   { ssr: false }
 );
-
-// import { useUser } from "@clerk/nextjs";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,12 +17,6 @@ const Navbar = () => {
     { name: "Forums", href: "/forums" },
     { name: "Userchat", href: "/chat" },
   ];
-
-
-  // const user = useUser()
-  // console.log(user.user);
-  
-
 
   return (
     <nav className="fixed w-full top-0 z-50 bg-white/5 backdrop-blur-lg border-b border-white/10">
