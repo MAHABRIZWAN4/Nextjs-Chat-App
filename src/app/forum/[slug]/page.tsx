@@ -1,6 +1,5 @@
 import React from "react";
 import ChatForum from "@/app/component/ChatForum";
-
 import { currentUser } from "@clerk/nextjs/server";
 
 interface Params {
@@ -20,7 +19,7 @@ export default async function Slug({ params }: { params: Params }) {
               slug={slug}
               clerkUser={{
                 id: user?.id,
-                name: user?.firstName,
+                firstName: user?.firstName,
                 token: user?.publicMetadata.token,
               }}
             />

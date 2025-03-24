@@ -14,12 +14,11 @@ import {
 
 import "stream-chat-react/dist/css/v2/index.css";
 
-
 function Capitalize(str: string) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-import React from 'react'
+import React from "react";
 
 interface ChatForumProps {
   clerkUser: any; // Replace 'any' with the appropriate type
@@ -27,16 +26,11 @@ interface ChatForumProps {
 }
 
 function ChatForum({ clerkUser, slug }: ChatForumProps) {
-  
+  const apiKey = "794xebu5vtq7";
+  const userId = clerkUser.id;
+  const userName = clerkUser.firstName;
+  const userToken = clerkUser.token;
 
-const apiKey = "794xebu5vtq7";
-const userId = clerkUser.id;
-const userName = clerkUser.fullName;
-const userToken = clerkUser.token;
-
-
-  
-  
   const user = {
     id: userId,
     name: userName,
@@ -60,10 +54,6 @@ const userToken = clerkUser.token;
     });
 
     setChannel(channel);
-
-    // channel.addMembers([userId]);
-
-
   }, [client]);
 
   if (!client) return <div>Setting up client & connection...</div>;
@@ -81,6 +71,5 @@ const userToken = clerkUser.token;
     </Chat>
   );
 }
-
 
 export default ChatForum;
